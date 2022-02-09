@@ -3,3 +3,4 @@ torch==1.10.2
 transformers==4.11.3
 tqdm==4.62.3
 numpy==1.20.3
+sklearn==0.24.2

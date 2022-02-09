@@ -22,9 +22,24 @@ nltk.download('universal_tagset')
 
 ## Running Topic Discovery
 
+The entry script is [`src/trainer.py`](src/trainer.py) and the meanings of the command line arguments will be displayed upon typing
+```
+python src/trainer.py -h
+```
+The topic discovery results will be written to `results_${dataset}`.
+
+We provide two example scripts [`nyt.sh`](nyt.sh) and [`yelp.sh`](yelp.sh) for running topic discovery on New York Times and Yelp Review corpora used in the paper, respectively.
 
 ## Running Document Clustering
 
+The latent document embeddings will be saved to `results_${dataset}/latent_doc_emb.pt` which can be used as features to clustering algorithms (e.g., K-Means).
+
+## Running on New Datasets
+To execute the code on a new dataset, you need to 
+
+1. Create a directory named ```your_dataset``` under ```datasets```.
+2. Prepare a text corpus ```train.txt``` (one document per line) under ```your_dataset``` as the target corpus for topic discovery.
+3. Run [`src/trainer.py`](src/trainer.py) with appropriate command line arguments (the default values are usually good start points)
 
 ## Citations
 
