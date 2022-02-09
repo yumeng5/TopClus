@@ -1,0 +1,6 @@
+/datasets/nyt/*.txt
+/datasets/yelp/*.txt
+__pycache__
+*.pt
+*venv/
+results_*/
