@@ -171,13 +171,6 @@ class TopClusTrainer(object):
         doc_emb_path = os.path.join(self.res_dir, "latent_doc_emb.pt")
         print(f"Saving document embeddings to {doc_emb_path}")
         torch.save(latent_doc_embs, doc_emb_path)
-
-        # print(f"Evaluating document clustering with latent document embeddings")
-        # for aspect in ['topic', 'location']:
-        # # label_path = os.path.join(self.data_dir, f"labels.txt")
-        #     print(f"aspect: {aspect}")
-        #     label_path = os.path.join(self.data_dir, f"label_{aspect}.txt")
-        #     self.utils.cluster_eval(label_path, doc_emb_path, self.args.seed)
         return 
 
     # compute target distribution for distinctive topic clustering
