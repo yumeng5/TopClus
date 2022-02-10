@@ -28,7 +28,7 @@ python src/trainer.py -h
 ```
 The topic discovery results will be written to `results_${dataset}`.
 
-We provide two example scripts [`nyt.sh`](nyt.sh) and [`yelp.sh`](yelp.sh) for running topic discovery on the New York Times and the Yelp Review corpora used in the paper, respectively.
+We provide two example scripts [`nyt.sh`](nyt.sh) and [`yelp.sh`](yelp.sh) for running topic discovery on the New York Times and the Yelp Review corpora used in the paper, respectively. You need to first extract the text files from the `.tar.gz` tarball files under [`datasets/nyt`](datasets/nyt) and [`datasets/yelp`](datasets/yelp).
 
 You could expect to obtain results like the following (the Topic IDs are random):
 ```
