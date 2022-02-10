@@ -75,7 +75,7 @@ utils.cluster_eval(label_path="datasets/nyt/label_topic.txt", emb_path="results_
 To execute the code on a new dataset, you need to 
 
 1. Create a directory named ```your_dataset``` under ```datasets```.
-2. Prepare a text corpus ```train.txt``` (one document per line) under ```your_dataset``` as the target corpus for topic discovery.
+2. Prepare a text corpus ```texts.txt``` (one document per line) under ```your_dataset``` as the target corpus for topic discovery.
 3. Run [`src/trainer.py`](src/trainer.py) with appropriate command line arguments (the default values are usually good start points).
 
 ## Citations
