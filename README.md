@@ -1,6 +1,6 @@
 # TopClus
 
-The source code used for [**Topic Discovery via Latent Space Clustering of Pretrained Language Model Representations**](), published in WWW 2022.
+The source code used for [**Topic Discovery via Latent Space Clustering of Pretrained Language Model Representations**](https://arxiv.org/abs/2202.04582), published in WWW 2022.
 
 ## Requirements
 
@@ -19,6 +19,12 @@ nltk.download('stopwords')
 nltk.download('averaged_perceptron_tagger')
 nltk.download('universal_tagset')
 ```
+
+## Overview
+
+**TopClus** is an unsupervised topic discovery method that jointly models words, documents and topics in a latent spherical space derived from pretrained language model representations.
+
+<img src="./TopClus.png" width="1000px"></img>
 
 ## Running Topic Discovery
 
@@ -58,7 +64,7 @@ Topic 75: strawberry,berry,onion,peppers,tomato,onions,potatoes,vegetable,mustar
 
 The latent document embeddings will be saved to `results_${dataset}/latent_doc_emb.pt` which can be used as features to clustering algorithms (e.g., K-Means).
 
-If you have ground truth document labels, you could obtain the document clustering evaluation results by passing the document label file and the saved latent document embedding file to the `cluster_eval` function in `src/utils.py`(src/utils.py). For example:
+If you have ground truth document labels, you could obtain the document clustering evaluation results by passing the document label file and the saved latent document embedding file to the `cluster_eval` function in [`src/utils.py`](src/utils.py). For example:
 ```
 from src.utils import TopClusUtils
 utils = TopClusUtils()
