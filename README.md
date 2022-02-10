@@ -28,7 +28,7 @@ python src/trainer.py -h
 ```
 The topic discovery results will be written to `results_${dataset}`.
 
-We provide two example scripts [`nyt.sh`](nyt.sh) and [`yelp.sh`](yelp.sh) for running topic discovery on New York Times and Yelp Review corpora used in the paper, respectively.
+We provide two example scripts [`nyt.sh`](nyt.sh) and [`yelp.sh`](yelp.sh) for running topic discovery on the New York Times and the Yelp Review corpora used in the paper, respectively.
 
 You could expect to obtain results like the following (the Topic IDs are random):
 ```
@@ -40,6 +40,18 @@ Topic 41: economic,commercially,economy,business,industrial,industry,market,cons
 Topic 46: senate,senator,congressional,legislators,legislatures,ministry,legislature,minister,ministerial,parliament
 Topic 72: government,administration,governments,administrations,mayor,gubernatorial,mayoral,mayors,public,governor
 Topic 77: aircraft,airline,airplane,airlines,voyage,airplanes,aviation,planes,spacecraft,flights
+Topic 88: baseman,outfielder,baseball,innings,pitchers,softball,inning,basketball,shortstop,pitcher
+```
+```
+On Yelp Review:
+Topic 1: steamed,roasted,fried,shredded,seasoned,sliced,frozen,baked,canned,glazed
+Topic 15: nice,cozy,elegant,polite,charming,relaxing,enjoyable,pleasant,helpful,luxurious
+Topic 16: spicy,fresh,creamy,stale,bland,salty,fluffy,greasy,moist,cold
+Topic 17: flavor,texture,flavors,taste,quality,smells,tastes,flavour,scent,ingredients
+Topic 20: japanese,german,australian,moroccan,russian,greece,italian,greek,asian,
+Topic 40: drinks,beers,beer,wine,beverages,alcohol,beverage,vodka,champagne,wines
+Topic 55: horrible,terrible,shitty,awful,dreadful,worst,worse,disgusting,filthy,rotten
+Topic 75: strawberry,berry,onion,peppers,tomato,onions,potatoes,vegetable,mustard,garlic
 ```
 
 ## Running Document Clustering
